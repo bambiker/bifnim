@@ -90,7 +90,7 @@ function successFunction(position) {
 //    var placelat = 31.895138890168173;
 //    var placelng = 34.81117684158573; 
     var dist = ((lat-placelat)**2.+(lng-placelng)**2.)**.5*100000.; // gives approx meter
-    if (dist<40000)
+    if (dist<rad)
         {
         document.getElementById("mbar").innerHTML = "near " + dist;
 //        window.location.href = "file:///home/nirb/Desktop/test1.html?place=rehovotfirsthouse";
