@@ -10,13 +10,8 @@
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
 <script type="text/javascript"> 
-//  var geocoder;
 
-//  if (navigator.geolocation) {
-//    navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
-//} 
-
- var lat
+var lat
 //Get the latitude and the longitude;
 function successFunction(position) {
     lat = position.coords.latitude;
@@ -29,7 +24,7 @@ function successFunction(position) {
     rad = urlParams.get('rad');	    
     if (rad==null)
        {
-    	rad = 4000;
+    	rad = 50;
        }
 	
     document.getElementById("mylat").innerHTML = 'המיקום שלכם הוא: ' + lat + ' ,' + lng;// + '<br>https://www.google.com/maps/@'+lat+','+lng+',19z';
@@ -81,24 +76,18 @@ function successFunction(position) {
 	  default:
 	    alert("איך הגעתם לפה??? משהו לא בסדר");
 	    next = 'error'
-
 	}
 
-
-//    var placelat = 31.895138890168173;
-//    var placelng = 34.81117684158573; 
     var dist = ((lat-placelat)**2.+(lng-placelng)**2.)**.5*100000.; // gives approx meter
     if (dist<rad)
         {
         document.getElementById("mbar").innerHTML = "near " + dist;
-//        window.location.href = "file:///home/nirb/Desktop/test1.html?place=rehovotfirsthouse";
         window.location.href = myurl + "?place="+next+"&rad="+rad;
         }
     else
         {
         document.getElementById("mbar").innerHTML = "אתם קצת רחוקים מהמיקום, נסו שנית ";
         } 
-
 
 }
 
@@ -116,14 +105,13 @@ function initialize() {
 
 </script> 
 </head>  
-<body align="right" dir="rtl"> 
 
+<body align="right" dir="rtl"> 
 <div id="mbar"></div>
 <div id="mylat"></div>
 <input type="button" value="בדיקת מיקום" onclick="pressed()">
 <br><br>
 <div id="youtube"></div>
-
 
 <script>
 const queryString1 = window.location.search;
