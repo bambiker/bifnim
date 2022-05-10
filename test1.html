@@ -31,8 +31,6 @@ function successFunction(position) {
        {
     	rad = 4000;
        }
-
-    alert(rad);
 	
     document.getElementById("mylat").innerHTML = 'המיקום שלכם הוא: ' + lat + ' ,' + lng;// + '<br>https://www.google.com/maps/@'+lat+','+lng+',19z';
 
@@ -94,7 +92,7 @@ function successFunction(position) {
         {
         document.getElementById("mbar").innerHTML = "near " + dist;
 //        window.location.href = "file:///home/nirb/Desktop/test1.html?place=rehovotfirsthouse";
-        window.location.href = myurl + "?place="+next+"&dir="+rad;
+        window.location.href = myurl + "?place="+next+"&rad="+rad;
         }
     else
         {
