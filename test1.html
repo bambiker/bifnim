@@ -26,14 +26,11 @@ function successFunction(position) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const place = urlParams.get('place');
-    if (urlParams.has('rad'))
+    const rad = urlParams.get('rad');	    
+    if (rad==null)
        {
-    	//rad = urlParams.get('rad');	    
+    	rad = 4000;
        }
-//    else
-//	{
-//    	rad = 4000;	    		
-//	}
 
     alert(rad);
 	
