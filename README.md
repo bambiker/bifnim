@@ -1,8 +1,7 @@
-# EscapeShvil
-This project will display escape shvils (trails). The same way that escape rooms work.
-The first page will display Youtube video that describe the next point of interest, you will have to go there using the clues given in the video. 
-Once you reach the POI, you have to check your coordinates, and if it's the POI coordinates, a new video with a new riddle will show, until you will reach the final POI.
-Every one will be able to add new trails.
-The project will be free to use.
+# Bifnim בפנים
+האתר יציג רשימה של שבילים אשר מורכבים מנקודות עניין, כדי להגיע מנקודת עניין אחת לחברתה יש לפתור חידות.
+החידות יוצגו בסרטונים אשר גם מכילים הסבר על המקום.
+כאשר נגיע למיקום הבא, יהיה אפשר לבדוק באמצעות הפלאפון, אם הגענו למיקום הנכון, ואם כן, תוצג בפנינו החידה למיקום הבא.
+כל אחד יוכל להוסיף מסלולים לאתר, וכמו כן האתר יהיה פתוח לשימוש בחינם.
 
 https://rawgit.com/bambiker/EscapeShvil/main/trail.html?place=rehovot
