@@ -13,6 +13,7 @@
 var lat
 //Get the latitude and the longitude;
 function successFunction(position) {
+	alert('11111')
     lat = position.coords.latitude;
     var lng = position.coords.longitude;
     //alert(lat)
@@ -21,14 +22,18 @@ function successFunction(position) {
     const urlParams = new URLSearchParams(queryString);
     const place = urlParams.get('place');
     rad = urlParams.get('rad');	    
+alert('11122')
     if (rad==null)
        {
     	rad = 50;
        }
+	alert('111333311')
 	
     document.getElementById("mylat").innerHTML = 'המיקום שלכם הוא: ' + lat + ' ,' + lng;// + '<br>https://www.google.com/maps/@'+lat+','+lng+',19z';
+	alert('114444111')
 
     myurl = window.location.href.substr(0,window.location.href.search("html")+4);
+	alert('1155511')
 
     switch (place) {
 	  case 'rehovot':
@@ -76,8 +81,10 @@ function successFunction(position) {
 	    alert("איך הגעתם לפה??? משהו לא בסדר");
 	    next = 'error'
 	}
+	alert('11666')
 
     var dist = ((lat-placelat)**2.+(lng-placelng)**2.)**.5*100000.; // gives approx meter
+	alert('17771')
     if (dist<rad)
         {
         document.getElementById("mbar").innerHTML = "near " + dist;
