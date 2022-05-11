@@ -4,3 +4,5 @@ The first page will display Youtube video that describe the next point of intere
 Once you reach the POI, you have to check your coordinates, and if it's the POI coordinates, a new video with a new riddle will show, until you will reach the final POI.
 Every one will be able to add new trails.
 The project will be free to use.
+
+https://rawgit.com/bambiker/EscapeShvil/main/trail.html?place=rehovot
