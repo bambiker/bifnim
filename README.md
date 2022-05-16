@@ -4,4 +4,4 @@
 כאשר נגיע למיקום הבא, יהיה אפשר לבדוק באמצעות הפלאפון, אם הגענו למיקום הנכון, ואם כן, תוצג בפנינו החידה למיקום הבא.
 כל אחד יוכל להוסיף מסלולים לאתר, וכמו כן האתר יהיה פתוח לשימוש בחינם.
 
-https://rawgit.com/bambiker/Bifnim/main/trail.html?place=rehovot
+https://rawgit.com/bambiker/EscapeShvil/main/trail.html?place=rehovot
