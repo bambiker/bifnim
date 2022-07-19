@@ -134,7 +134,13 @@ maps="https://www.google.com/maps/dir//31.894705,34.8131871/@31.894705,34.813187
 const queryString1 = window.location.search;
 const urlParams1 = new URLSearchParams(queryString1);	
 const place1 = urlParams1.get('place');
-
+const mode = urlParams1.get('mode');
+if (mode=='riddle')
+{bttnnext.innerHTML='sdf';}
+else
+{btnnext.innerHTML="erwwer";}
+	
+	
 if (place1=='rehovotfin')
 	{
         document.getElementById("mylat").innerHTML = "כל הכבוד, ניצחת את המסלול";
