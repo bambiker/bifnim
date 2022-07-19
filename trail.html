@@ -110,15 +110,23 @@ function initialize() {
 <b> בִּפְנִים - רחובות </b>
 <div id="mbar"></div>
 <div id="mylat"></div>
-	
 <script>
+const queryString1 = window.location.search;
+const urlParams1 = new URLSearchParams(queryString1);
+const mode = urlParams1.get('mode')
+if (mode==null)
+{
+mode = "riddle";
+}
 
+	
+</script>	
 <input type="button" value="בדיקת המיקום" onclick="pressed()">
 <br><br>
 <div id="youtube"></div>
 
-const queryString1 = window.location.search;
-const urlParams1 = new URLSearchParams(queryString1);
+<script>
+	
 const place1 = urlParams1.get('place');
 
 if (place1=='rehovotfin')
