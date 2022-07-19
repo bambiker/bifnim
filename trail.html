@@ -126,7 +126,8 @@ mode = "riddle";
 <div id="youtube"></div>
 
 <script>
-	
+const queryString1 = window.location.search;
+const urlParams1 = new URLSearchParams(queryString1);	
 const place1 = urlParams1.get('place');
 
 if (place1=='rehovotfin')
