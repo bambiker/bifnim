@@ -117,8 +117,13 @@ const mode = urlParams1.get('mode')
 if (mode==null)
 {
 mode = "riddle";
+btntext = "בדיקת מיקום";
 }
-
+else
+{
+btntext = "מפה למיקום הבא";
+maps="https://www.google.com/maps/dir//31.894705,34.8131871/@31.894705,34.8131871,17z";
+}
 	
 </script>	
 <input type="button" value="בדיקת המיקום" onclick="pressed()">
