@@ -111,21 +111,6 @@ function initialize() {
 <div id="mbar"></div>
 <div id="mylat"></div>
 <script>
-const queryString1 = window.location.search;
-const urlParams1 = new URLSearchParams(queryString1);
-const mode = urlParams1.get('mode')
-if (mode==null)
-{
-mode = "riddle";
-btntext = "בדיקת מיקום";
-}
-else
-{
-btntext = "מפה למיקום הבא";
-maps="https://www.google.com/maps/dir//31.894705,34.8131871/@31.894705,34.8131871,17z";
-}
-	
-</script>	
 <input id="btnnext" type="button" value="בדיקת המיקום" onclick="pressed()">
 <br><br>
 <div id="youtube"></div>
@@ -134,7 +119,6 @@ maps="https://www.google.com/maps/dir//31.894705,34.8131871/@31.894705,34.813187
 const queryString1 = window.location.search;
 const urlParams1 = new URLSearchParams(queryString1);	
 const place1 = urlParams1.get('place');
-const mode = urlParams1.get('mode');
 document.getElementById("btnnext").innerHTML="werwer";
 	
 if (place1=='rehovotfin')
