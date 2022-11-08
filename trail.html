@@ -121,10 +121,13 @@ if (place1=='rehovotfin')
 	{
         document.getElementById("mylat").innerHTML = "כל הכבוד, ניצחת את המסלול<br>אתם מוזמנים להסתובב ולהכיר יותר טוב את האזור";
 //	    alert("הגעתם למיקום האחרון, כל הכבוד, אתם מוזמנים להסתובב ולהכיר יותר טוב את האזור או להתחיל מסלול חדש");
+            document.getElementById('btnnext').style.visibility = 'hidden';
 		
 	}
 else
 	{
+	        document.getElementById('btnnext').style.visibility = 'visible';
+
 		if (place1=='rehovot')
 		{
 		document.getElementById("mylat").innerHTML = "<br>ברוכים הבאים לסיור באמצעות חידות.<br>הקשיבו לסרטון, והתקדמו לכיוון המקום המוסבר בסרטון<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על כפתור הבדיקה";
