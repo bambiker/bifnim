@@ -15,7 +15,7 @@ var lat
 function successFunction(position) {
     lat = position.coords.latitude;
     var lng = position.coords.longitude;
-    alert(lat)
+    alert("lat")
     //file:///home/nirb/Desktop/test0.html?place=123
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -78,21 +78,21 @@ function successFunction(position) {
 	}
 
     var dist = ((lat-placelat)**2.+(lng-placelng)**2.)**.5*100000.; // gives approx meter
-    alert("1111");
+    alert("1111a");
 
     if (dist<rad)
         {
-	    alert("222");
+	    alert("222a");
         document.getElementById("mbar").innerHTML = "near " + dist;
         window.location.href = myurl + "?place="+next+"&rad="+rad;
         }
     else
         {
-    alert("3333");
+    alert("3333a");
 		
         document.getElementById("mbar").innerHTML = "אתם קצת רחוקים מהמיקום, נסו שנית ";
         } 
-    alert("4444");
+    alert("4444a");
 
 }
 
@@ -129,7 +129,7 @@ if (place1=='rehovotfin')
         document.getElementById("mylat").innerHTML = "כל הכבוד, ניצחת את המסלול";
 	}
 else
-//	{
+	{
 //		if (place1=='rehovot')
 //		{
 //		document.getElementById("mylat").innerHTML = "<br>ברוכים הבאים לסיור באמצעות חידות.<br>הקשיבו לסרטון, ותגיעו למקום המוסבר בסרטון<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על כפתור הבדיקה";
@@ -138,7 +138,7 @@ else
 //		{
 		document.getElementById("mylat").innerHTML = "<br>הכנו לכם את כתב החידה למיקום הבא.<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על כפתור הבדיקה";
 //		}
-//	}
+	}
 </script>
 
 <script>
