@@ -15,7 +15,7 @@ var lat
 function successFunction(position) {
     lat = position.coords.latitude;
     var lng = position.coords.longitude;
-    alert("latc")
+    alert("latd")
     //file:///home/nirb/Desktop/test0.html?place=123
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -65,7 +65,6 @@ function successFunction(position) {
 	    var placelat = 31.894229;
 	    	placelng = 34.811401; 
 		next = 'rehovotfin';
-	    alert("הגעתם למיקום האחרון, כל הכבוד, אתם מוזמנים להסתובב ולהכיר יותר טוב את האזור או להתחיל מסלול חדש");
 	    break;
 	  case 'rehovotfin':
 	    var placelat = 31.894229;
@@ -78,21 +77,17 @@ function successFunction(position) {
 	}
 
     var dist = ((lat-placelat)**2.+(lng-placelng)**2.)**.5*100000.; // gives approx meter
-    alert("1111c");
 
     if (dist<rad)
         {
-	    alert("222b");
         document.getElementById("mbar").innerHTML = "near " + dist;
         window.location.href = myurl + "?place="+next+"&rad="+rad;
         }
     else
         {
-    alert("3333b");
 		
         document.getElementById("mbar").innerHTML = "אתם קצת רחוקים מהמיקום, נסו שנית ";
         } 
-    alert("4444b");
 
 }
 
@@ -126,7 +121,9 @@ const place1 = urlParams1.get('place');
 	
 if (place1=='rehovotfin')
 	{
-        document.getElementById("mylat").innerHTML = "כל הכבוד, ניצחת את המסלול";
+        document.getElementById("mylat").innerHTML = "כל הכבוד, ניצחת את המסלול<br>אתם מוזמנים להסתובב ולהכיר יותר טוב את האזור";
+//	    alert("הגעתם למיקום האחרון, כל הכבוד, אתם מוזמנים להסתובב ולהכיר יותר טוב את האזור או להתחיל מסלול חדש");
+		
 	}
 else
 	{
