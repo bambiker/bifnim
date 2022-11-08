@@ -15,7 +15,7 @@ var lat
 function successFunction(position) {
     lat = position.coords.latitude;
     var lng = position.coords.longitude;
-    alert("latd")
+   // alert("latd")
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const place = urlParams.get('place');
@@ -25,7 +25,7 @@ function successFunction(position) {
     	rad = 50;
        }
 	
-    document.getElementById("mylat").innerHTML = 'המיקום שלכם הוא: ' + lat + ' ,' + lng;// + '<br>https://www.google.com/maps/@'+lat+','+lng+',19z';
+//    document.getElementById("mylat").innerHTML = 'המיקום שלכם הוא: ' + lat + ' ,' + lng;// + '<br>https://www.google.com/maps/@'+lat+','+lng+',19z';
 
     myurl = window.location.href.substr(0,window.location.href.search("html")+4);
 
@@ -131,7 +131,6 @@ else
 		if (place1=='rehovot')
 		{
 		document.getElementById("mylat").innerHTML = "<br>ברוכים הבאים לסיור באמצעות חידות.<br>הקשיבו לסרטון, והתקדמו לכיוון המקום המוסבר בסרטון<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על כפתור הבדיקה";
-//				document.getElementById("mylat").innerHTML = "<br>sdfsdf לכם את כתב dsfsdfsdf למיקום הבא.<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על sdfsfd הבדיקה";
 		}
 		else
 		{
