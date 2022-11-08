@@ -15,7 +15,7 @@ var lat
 function successFunction(position) {
     lat = position.coords.latitude;
     var lng = position.coords.longitude;
-    alert("latb")
+    alert("latc")
     //file:///home/nirb/Desktop/test0.html?place=123
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -78,7 +78,7 @@ function successFunction(position) {
 	}
 
     var dist = ((lat-placelat)**2.+(lng-placelng)**2.)**.5*100000.; // gives approx meter
-    alert("1111b");
+    alert("1111c");
 
     if (dist<rad)
         {
@@ -132,8 +132,8 @@ else
 	{
 		if (place1=='rehovot')
 		{
-//		document.getElementById("mylat").innerHTML = "<br>ברוכים הבאים לסיור באמצעות חידות.<br>הקשיבו לסרטון, ותגיעו למקום המוסבר בסרטון<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על כפתור הבדיקה";
-				document.getElementById("mylat").innerHTML = "<br>sdfsdf לכם את כתב dsfsdfsdf למיקום הבא.<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על sdfsfd הבדיקה";
+		document.getElementById("mylat").innerHTML = "<br>ברוכים הבאים לסיור באמצעות חידות.<br>הקשיבו לסרטון, והתקדמו לכיוון המקום המוסבר בסרטון<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על כפתור הבדיקה";
+//				document.getElementById("mylat").innerHTML = "<br>sdfsdf לכם את כתב dsfsdfsdf למיקום הבא.<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על sdfsfd הבדיקה";
 
 		}
 		else
