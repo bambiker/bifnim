@@ -15,7 +15,7 @@ var lat
 function successFunction(position) {
     lat = position.coords.latitude;
     var lng = position.coords.longitude;
-    //alert(lat)
+    alert(lat)
     //file:///home/nirb/Desktop/test0.html?place=123
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
