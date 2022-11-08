@@ -16,7 +16,6 @@ function successFunction(position) {
     lat = position.coords.latitude;
     var lng = position.coords.longitude;
     alert("latd")
-    //file:///home/nirb/Desktop/test0.html?place=123
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const place = urlParams.get('place');
@@ -85,7 +84,6 @@ function successFunction(position) {
         }
     else
         {
-		
         document.getElementById("mbar").innerHTML = "אתם קצת רחוקים מהמיקום, נסו שנית ";
         } 
 
@@ -131,7 +129,6 @@ else
 		{
 		document.getElementById("mylat").innerHTML = "<br>ברוכים הבאים לסיור באמצעות חידות.<br>הקשיבו לסרטון, והתקדמו לכיוון המקום המוסבר בסרטון<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על כפתור הבדיקה";
 //				document.getElementById("mylat").innerHTML = "<br>sdfsdf לכם את כתב dsfsdfsdf למיקום הבא.<br>אתם חושבים שהגעתם למיקום התחנה (עד 50 מטר)? ליחצו על sdfsfd הבדיקה";
-
 		}
 		else
 		{
@@ -141,7 +138,6 @@ else
 </script>
 
 <script>
-//file:///home/nirb/Desktop/test1.html?place=rehovot
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const place = urlParams.get('place');
@@ -185,8 +181,6 @@ switch (place) {
 
 </script>
 
-<br>
-<br>
 <br><br>
 
 יש לכם הצעות לשיפור? רעיונות לעוד מסלולים? 
