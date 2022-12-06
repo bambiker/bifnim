@@ -60,7 +60,12 @@
 const queryString1 = window.location.search;
 const urlParams1 = new URLSearchParams(queryString1);	
 const place1 = urlParams1.get('place');
-
+rad = urlParams.get('rad');	    
+if (rad==null)
+{
+rad = 50;
+}
+	
 function successFunction(position) {
   
 myurl = window.location.href.substr(0,window.location.href.search("html")-4);  
