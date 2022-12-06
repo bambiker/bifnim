@@ -28,6 +28,7 @@ function successFunction(position) {
 //    document.getElementById("mylat").innerHTML = 'המיקום שלכם הוא: ' + lat + ' ,' + lng;// + '<br>https://www.google.com/maps/@'+lat+','+lng+',19z';
 
     myurl = window.location.href.substr(0,window.location.href.search("html")+4);
+    myurloops = window.location.href.substr(0,window.location.href.search("html")-6);
 
     switch (place) {
 	  case 'rehovot':
@@ -85,6 +86,7 @@ function successFunction(position) {
     else
         {
         document.getElementById("mbar").innerHTML = "אתם קצת רחוקים מהמיקום, נסו שנית ";
+	window.location.href = myurloops + "oops.html;
         } 
 
 }
