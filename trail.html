@@ -151,7 +151,9 @@ function initialize() {
 <div id="mbar"></div>
 <div id="mylat"></div>
 <br>
+<center>
 <div id="youtube"></div>
+</center>
 <div id="askpostext"></div>
 <center><input id="btnnext" type="button" value="בדיקת מיקום" onclick="pressed()" STYLE="color: white; font-family: Verdana; font-weight: bold; font-size: 24px; background-color: #F9AC50;border-radius: 12px;" size="24" maxlength="30">	</center>
 <script>
@@ -223,9 +225,8 @@ switch (place) {
 	  ww = wh * 16 / 9
 	}
       vid = '<iframe width='+ww+' height='+wh+' src="https://www.youtube.com/embed/'+code+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-  <center>
+
     document.getElementById("youtube").innerHTML = vid;
-</center>
 </script>
 	
 <br><br>
