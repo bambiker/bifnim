@@ -104,7 +104,7 @@ function initialize() {
 </script> 
 	    <style>
 
-    #ABC {
+    #secup {
       background-color: #006666;
       height: 80;
       font-size: 24px;
@@ -115,20 +115,29 @@ function initialize() {
       width: 100%;
     }
 
+    #secmid {
+      background-color: white;
+      font-size: 24px;
+      color: #006666;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+		    
+		    
     </style>
 </head>  
 
 <body align="right" dir="rtl">
-<section id="ABC">
+<section id="secup">
 <center> בִּפְנִים 
 	<br>
 	רחובות </center>
 </section>
-<section>
-<b> בִּפְנִים - רחובות </b>
+<section  id="secmid">
 <div id="mbar"></div>
 <div id="mylat"></div>
-<input id="btnnext" type="button" value="בדיקת המיקום" onclick="pressed()">
 <br><br>
 <div id="youtube"></div>
 
@@ -150,7 +159,7 @@ else
 
 		if (place1=='rehovot')
 		{
-		document.getElementById("mylat").innerHTML = "<br>הנה כתב החידה לתחנה הבאה<br>יופי שבאת !";
+		document.getElementById("mylat").innerHTML = "<br>יופי שבאת !<br>הנה כתב החידה לתחנה הבאה";
 		}
 		else
 		{
@@ -204,7 +213,10 @@ switch (place) {
 </script>
 
 <br><br>
-
+	
+<input id="btnnext" type="button" value="בדיקת המיקום" onclick="pressed()">
+	
+<br><br>
 יש לכם הצעות לשיפור? רעיונות לעוד מסלולים? 
 <br><a href="https://wa.me/972542236828" target="_blank"> שילחו ווטסאפ </a>
 <br>	
