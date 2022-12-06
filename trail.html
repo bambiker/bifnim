@@ -106,7 +106,7 @@ function initialize() {
 
     #secup {
       background-color: #006666;
-      height: 80;
+      height: 55px;
       font-size: 24px;
       color: white;
       position: absolute;
@@ -120,7 +120,7 @@ function initialize() {
       font-size: 24px;
       color: #006666;
       position: absolute;
-      top: 80;
+      top: 55px;
       left: 0;
       width: 100%;
     }
@@ -140,7 +140,7 @@ function initialize() {
 <div id="mylat"></div>
 <br><br>
 <div id="youtube"></div>
-
+<div id="askpostext"></div>
 <input id="btnnext" type="button" value="בדיקת המיקום" onclick="pressed()">	
 
 <script>
@@ -161,12 +161,14 @@ else
 
 		if (place1=='rehovot')
 		{
-		document.getElementById("mylat").innerHTML = "<br>יופי שבאת !<br>הנה כתב החידה לתחנה הבאה";
+		document.getElementById("mylat").innerHTML = "<center><br>יופי שבאת !<br>הנה כתב החידה לתחנה הבאה</center>";
 		}
 		else
 		{
-		document.getElementById("mylat").innerHTML = "<br>הנה כתב החידה לתחנה הבאה";
+		document.getElementById("mylat").innerHTML = "<center><br>הנה כתב החידה לתחנה הבאה</center>";
 		}
+		document.getElementById("askpostext").innerHTML = "<center><br>נראה לך שהגעתם  <br>למקום הנכון? </center>";
+
 	}
 </script>
 
