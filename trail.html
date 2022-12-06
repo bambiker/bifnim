@@ -96,6 +96,11 @@ function errorFunction(){
 function pressed() {
     navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
 }
+	
+function whatsup() {
+window.location.href = https://wa.me/972542236828;	
+<br><a href="https://wa.me/972542236828" target="_blank"> כאן </a>
+}	
 
 function initialize() {
     geocoder = new google.maps.Geocoder();
@@ -142,7 +147,6 @@ function initialize() {
 <div id="youtube"></div>
 <div id="askpostext"></div>
 <input id="btnnext" type="button" value="בדיקת המיקום" onclick="pressed()">	
-
 <script>
 const queryString1 = window.location.search;
 const urlParams1 = new URLSearchParams(queryString1);	
@@ -218,7 +222,7 @@ switch (place) {
 	
 <br><br>
 הצעות לשיפור ? רעיונות למסלולים נוספים? 
-<br><a href="https://wa.me/972542236828" target="_blank"> כאן </a>
+<input id="btnwhatsup" type="button" value="כאן !" onclick="whatsup()">	
 <br>	
 <img src="applogo.png" alt="logo">
 	
