@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html> 
+<script>// example of how to run the app: file:///home/nirb/Desktop/test1.html?place=rehovot
+</script>
+<head> 
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+<title>בפנים רחובות - חדר בריחה פתוח</title> 
+
+
+</script> 
+	    <style>
+
+    #secup {
+      background-color: #006666;
+      height: 55px;
+      font-size: 24px;
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    #secmid {
+      background-color: white;
+      font-size: 24px;
+      color: #006666;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      width: 100%;
+    }
+
+    #secbutton
+{
+	background-color: #F9AC50;
+	color: white;
+	width: 150px;
+	height: 40px;
+        font-size: 24px;
+	padding: 10px;
+}		    
+    
+    </style>
+</head>  
+
+<body align="right" dir="rtl">
+<section id="secup">
+<center> בִּפְנִים 
+	<br>
+	רחובות </center>
+</section>
+<section  id="secmid">
+<div id="mbar">סיור חידות עירוני</div>
+<br>
+<script>
+const queryString1 = window.location.search;
+const urlParams1 = new URLSearchParams(queryString1);	
+const place1 = urlParams1.get('place');
+
+function successFunction(position) {
+  
+myurl = window.location.href.substr(0,window.location.href.search("html"-4);  
+window.location.href = myurl + "trail.html?place=rehovot&rad="+rad;
+}
+                                    
+function errorFunction(){
+    alert("error in start");
+}
+  
+function pressed() {
+    navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
+}
+  
+</script>
+<center><input id="btnnext" type="button" value="להתחלת הסיור" onclick="pressed()" STYLE="color: white; font-family: Verdana; font-weight: bold; font-size: 24px; background-color: #F9AC50;border-radius: 12px;" size="24" maxlength="30">	</center>
+
+	
+<br><br>
+הצעות לשיפור ? רעיונות למסלולים נוספים? <br>
+<button onclick=" window.open('https://wa.me/972542236828','_blank')" STYLE="color: white; font-family: Verdana; font-weight: bold; font-size: 24px; background-color: #F9AC50;border-radius: 12px;" size="24" maxlength="30">להתחלת הסיור</button><br>	
+<img src="applogo.png" alt="logo" width="100%">
+	
+</body> 
+</html> 
