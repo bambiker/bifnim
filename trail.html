@@ -139,16 +139,7 @@ function initialize() {
         font-size: 24px;
 	padding: 10px;
 }		    
-      input[type=button],
-      input[type=submit] {
-        background-color: #F2529c;
-        border: none;
-        color: #fff;
-        padding: 15px 30px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
-      }		    
+    
     </style>
 </head>  
 
@@ -164,7 +155,7 @@ function initialize() {
 <br><br>
 <div id="youtube"></div>
 <div id="askpostext"></div>
-<input id="btnnext" type="button" value="בדיקת המיקום" onclick="pressed()">	
+<input id="btnnext" type="button" value="בדיקת המיקום" onclick="pressed()" STYLE="color: #F9AC50; font-family: Verdana; font-weight: bold; font-size: 24px; background-color: #72A4D2;" size="24" maxlength="30">	
 <script>
 const queryString1 = window.location.search;
 const urlParams1 = new URLSearchParams(queryString1);	
