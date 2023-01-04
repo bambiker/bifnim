@@ -34,13 +34,16 @@ const queryString1 = window.location.search;
 const urlParams1 = new URLSearchParams(queryString1);	
 const place1 = urlParams1.get('place');
 rad = urlParams1.get('rad');	    
+
+myurl = window.location.href.substr(0,window.location.href.search("html")-6);  
 if (rad==null)
 {
-rad = 50;
+window.location.href = myurl + "trail.html?place=rehovot;
 }
-	
-myurl = window.location.href.substr(0,window.location.href.search("html")-6);  
+else
+{
 window.location.href = myurl + "trail.html?place=rehovot&rad="+rad;
+}
 }
                                     
 function errorFunction(){
