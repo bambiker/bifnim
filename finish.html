@@ -36,6 +36,13 @@
 </center>
 	
 <script>
+      var ww = window.innerWidth* 0.95
+      var wh0 = window.innerHeight *0.95
+      var wh = ww * 9 / 16
+      if (wh>wh0)
+	{ wh = wh0
+	  ww = wh * 16 / 9
+	}	
 code = "0gblBX9-YuI";
 vid = '<iframe width='+ww+' height='+wh+' src="https://www.youtube.com/embed/'+code+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 
