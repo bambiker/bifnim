@@ -83,7 +83,10 @@ function successFunction(position) {
     if (dist<rad)
         {
         document.getElementById("mbar").innerHTML = "near " + dist;
-        window.location.href = myurl + "?place="+next+"&rad="+rad;
+	if (next=='rehovotfin')
+	{	window.location.href = myurloops + "finish.html";}
+	else
+	{       window.location.href = myurl + "?place="+next+"&rad="+rad;}
         }
     else
         {
