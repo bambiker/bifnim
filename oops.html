@@ -36,6 +36,17 @@
 <center><input id="btnnext" type="button" value="חזרה לסרטון" onclick="history.back()" STYLE="color: white; font-family: Verdana; font-weight: bold; font-size: 24px; background-color: #F9AC50;border-radius: 12px;" size="24" maxlength="30">	</center>
 </section>
 <section id="down" align="left">
+<div id="youtube"></div>
+<script>
+      var wh0 = window.innerHeight *0.95
+      vid=''
+      var li = Math.floor((wh0-240)/23)
+      for (let i = 0; i < li; i++) {
+          vid += "<br>";
+}	
+      document.getElementById("youtube").innerHTML = vid;
+</script>	
+		
 <img src="applogo.png" alt="logo" width="40%">
 </section>
 	
