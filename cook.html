@@ -2,9 +2,10 @@
   <head>
     <title> cook</title>
   </head>
-  <body>
+  <body  onload="checkCookie()">
     cook1
-    
+<script>
+
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -38,7 +39,8 @@ function checkCookie() {
     }
   }
 }    
-                                                                        
+    </script>
+    cook1
   </body>
 </html>
     
