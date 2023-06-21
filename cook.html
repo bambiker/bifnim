@@ -2,7 +2,7 @@
   <head>
     <title> cook</title>
   </head>
-  <body  onload="checkCookie()">
+  <body  onload="delCookie()">
     cook1
 <script>
 
@@ -40,8 +40,12 @@ function checkCookie() {
     }
   }
 }    
+  function delCookie() {
+    setCookie("place", "", 365);
+}    
+
     </script>
-    cook1
+   restart
   </body>
 </html>
     
