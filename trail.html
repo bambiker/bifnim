@@ -132,6 +132,9 @@ function initialize() {
 const queryString1 = window.location.search;
 const urlParams1 = new URLSearchParams(queryString1);	
 const place1 = urlParams1.get('place');
+
+document.cookie = "place=" + place1 + ";path=/";
+	
 	
 if (place1=='rehovotfin')
 	{
