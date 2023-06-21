@@ -53,15 +53,21 @@ rad = urlParams1.get('rad');
 
 let place = getCookie("place");
 if (place==null)
-{place="rehovot";}
+{
+	alert("Welcome1 " + place);
+	place="rehovot";
+	alert("Welcome2 " + place);}
 if (place=="")
-{place="rehovot";}
+{
+	alert("Welcome3 " + place);
+	place="rehovot";
+	alert("Welcome4 " + place);}
 	
 	
 myurl = window.location.href.substr(0,window.location.href.search("html")-6);  
 if (rad==null)
 {
-window.location.href = myurl + "trail.html?flace="+place;
+window.location.href = myurl + "trail.html?place="+place;
 }
 else
 {
