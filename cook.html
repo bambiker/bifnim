@@ -29,7 +29,7 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let user = getCookie("username");
+  let user = getCookie("place");
   if (user != "") {
     alert("Welcome again " + user);
     setCookie("username", "", 365);
