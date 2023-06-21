@@ -51,14 +51,21 @@ const urlParams1 = new URLSearchParams(queryString1);
 const place1 = urlParams1.get('place');
 rad = urlParams1.get('rad');	    
 
+let place = getCookie("place");
+if (place==null)
+{place="rehovot";}
+if (place=="")
+{place="rehovot";}
+	
+	
 myurl = window.location.href.substr(0,window.location.href.search("html")-6);  
 if (rad==null)
 {
-window.location.href = myurl + "trail.html?place=rehovot";
+window.location.href = myurl + "trail.html?"+place+"=rehovot";
 }
 else
 {
-window.location.href = myurl + "trail.html?place=rehovot&rad="+rad;
+window.location.href = myurl + "trail.html?place="+place+"&rad="+rad;
 }
 }
                                     
